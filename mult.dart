@@ -9,7 +9,7 @@ void main()
 
     for(var i=1;i<=10;i++)
     {
-        result = multiply*i;        
-    }
-    print(result.toString());
+        result = m*i;
+        print(i.toString()+" = "+result.toString());
+    }    
 }
