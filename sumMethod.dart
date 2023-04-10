@@ -16,5 +16,5 @@ void main()
     var b = int.parse(numberB);
 
     var resultado = suma(a,b);
-    print(resultado.toString());
+    print("La suma de "+numberA+" y "+numberB+ " = "+resultado.toString());
 }
