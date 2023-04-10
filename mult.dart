@@ -10,6 +10,6 @@ void main()
     for(var i=1;i<=10;i++)
     {
         result = m*i;
-        print(i.toString()+" = "+result.toString());
+        print(multiply+" x "+i.toString()+" = "+result.toString());
     }    
 }
