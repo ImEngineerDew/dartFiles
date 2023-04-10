@@ -2,7 +2,7 @@ import 'dart:io';
 
 String nombre(var cuerpoNombre, var edad)
 {
-    return cuerpoNombre+" y tiene "+edad.toString();
+    return cuerpoNombre+" tiene "+edad.toString()+ " años ";
 }
 
 void main()
@@ -18,11 +18,11 @@ void main()
     if(age<18)
     {
         var info = nombre(name,edad);
-        print(info.toString()+" y es menor de edad");
+        print(info.toString()+"y es menor de edad");
     }
     else if(age>18)
     {
         var info = nombre(name,edad);
-        print(info.toString()+" y es mayor de edad");
+        print(info.toString()+"y es mayor de edad");
     }
 }
