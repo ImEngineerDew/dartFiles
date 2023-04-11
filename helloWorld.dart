@@ -1,4 +1,5 @@
-void main()
-{
-  print("Hello everyone from Dart");
+import 'dart:io';
+
+void main() {
+  stdout.write("Hello everyone from Dart");
 }
