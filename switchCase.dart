@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:mirrors';
 
 int casesOpt(int option) {
   switch (option) {
@@ -20,7 +19,9 @@ int casesOpt(int option) {
       }
       break;
     case 2:
-      stdout.writeln("Chocolate");
+      stdout.write("Please write your name: ");
+      var myName = stdin.readLineSync()!;
+      print("My name is: " + myName);
       break;
   }
   return option;
