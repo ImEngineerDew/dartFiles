@@ -1,15 +1,13 @@
 import 'dart:io';
 
-void main()
-{
-    print("Please write the number to multiply: ");
-    var multiply = stdin.readLineSync()!;
-    var m = int.parse(multiply);
-    var result;
+void main() {
+  stdout.write("Please write the number to mult: ");
+  var multiply = stdin.readLineSync()!;
+  var m = int.parse(multiply);
+  var result;
 
-    for(var i=1;i<=10;i++)
-    {
-        result = m*i;
-        print(multiply+" x "+i.toString()+" = "+result.toString());
-    }    
+  for (var i = 1; i <= 10; i++) {
+    result = m * i;
+    stdout.writeln(multiply + " x " + i.toString() + " = " + result.toString());
+  }
 }
