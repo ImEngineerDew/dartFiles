@@ -4,6 +4,7 @@ void main() {
   stdout.write("Check if the number is prime or not: ");
   var n = stdin.readLineSync()!;
 
+  //Equivalent in java to int number = Integer.parseInt(n);
   int number = int.parse(n);
 
   bool check = isPrime(number);
@@ -21,6 +22,7 @@ bool isPrime(int number) {
     return false;
   }
   for (int i = 2; i < (number) ~/ 2; i++) {
+    //that (number)~/2 is a Dart division
     if (number % i == 0) {
       return false;
     }
