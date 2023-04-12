@@ -18,3 +18,12 @@ function bool isPrime(int number){
   //If the number calculated is a prime number
   return true;
 }
+
+Now the following algorith thata allows calculate if the next prime number has a prime too
+when its flipped now (Emirp's)
+
+1. Check the current value of the prime number
+2. Flip the number, and calculate if these number are Emirp or not:
+   Conditions:
+   2.1 If the number hasn't a mirrored number, then isn't Emirp number
+   2.2 If the number has a mirrored number, then is a Emirp number 
