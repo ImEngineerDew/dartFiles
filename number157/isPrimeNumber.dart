@@ -1,4 +1,11 @@
-void main() {}
+import 'dart:ffi';
+import 'dart:io';
+
+void main() {
+  stdout.write("Please write the amount of your array: ");
+  int size = int.parse(stdin.readLineSync()!);
+  List<BigInt> numbers = 
+}
 
 bool isPrime(BigInt num) {
   int numFor = num.toInt();
