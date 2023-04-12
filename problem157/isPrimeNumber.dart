@@ -5,7 +5,7 @@ void main() {
   var n = stdin.readLineSync()!;
 
   //Equivalent in java to int number = Integer.parseInt(n);
-  int number = int.parse(n);
+  var number = int.parse(n);
 
   bool check = isPrime(number);
 
@@ -16,12 +16,12 @@ void main() {
   }
 }
 
-bool isPrime(int number) {
+bool isPrime(var number) {
   //check if the condition returns a false value
   if (number == 0 || number == 1 || number == 4) {
     return false;
   }
-  for (int i = 2; i < BigInt.from(number) ~/ 2; i++) {
+  for (var i = 2; i < number ~/ 2; i++) {
     //that (number)~/2 is a Dart division
     if (number % i == 0) {
       return false;
