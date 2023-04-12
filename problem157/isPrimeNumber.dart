@@ -9,9 +9,9 @@ void main() {
   bool check = isPrime(number);
 
   if (check == true) {
-    print(n + " it's a prime number");
+    print(n + " is a prime number");
   } else {
-    print(n + " not a prime number");
+    print(n + " isn't a prime number");
   }
 }
 
@@ -20,7 +20,7 @@ bool isPrime(int number) {
   if (number == 0 || number == 1 || number == 4) {
     return false;
   }
-  for (int i = 2; i < (number) / 2; i++) {
+  for (int i = 2; i < (number) ~/ 2; i++) {
     if (number % i == 0) {
       return false;
     }
