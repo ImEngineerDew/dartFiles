@@ -1,36 +1,14 @@
-import 'dart:io';
+void main() {}
 
-void main() {
-  stdout.write("Check if the number is prime or not: ");
-  var n = stdin.readLineSync()!;
-
-  //Equivalent in java to int number = Integer.parseInt(n);
-  var number = int.parse(n);
-
-  bool check = isPrime(number);
-
-  if (check == true) {
-    print(n + " is a prime number");
-  } else {
-    print(n + " isn't a prime number");
-  }
-}
-
-bool isPrime(var number) {
-  //check if the condition returns a false value
-  if (number == 0 || number == 1 || number == 4) {
+bool isPrime(BigInt num) {
+  int numFor = num.toInt();
+  if (num == BigInt.zero || num == BigInt.one || num.toInt() == 4) {
     return false;
   }
-  for (var i = 2; i < number ~/ 2; i++) {
-    //that (number)~/2 is a Dart division
-    if (number % i == 0) {
-      return false;
+  for (int i = 2; i < numFor; i++) {
+    if (numFor % i == 0) {
+      return false; //Check if the number isn't prime
     }
   }
-  //If the answer is true that indicates a prime number
-  return true;
-}
-
-int backwardsPrime(int number) {
-  return 0;
+  return true; //Check if the number is prime
 }
