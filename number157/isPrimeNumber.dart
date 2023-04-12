@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'dart:io';
 
 void main() {
@@ -7,12 +6,23 @@ void main() {
 
   //Defined the dynamic lists that define their size
   var inputNumbers = List<BigInt>.filled(size, BigInt.zero);
-  var isPrime = List<bool>.filled(size, false);
+  var numPrime = List<bool>.filled(size, false);
 
   for (int i = 0; i < size; i++) {
     stdout.write("Please write the follow numbers: ");
     BigInt primes = BigInt.parse(stdin.readLineSync()!);
-    inputNumbers[i] = isPrime(primes);
+    inputNumbers[i] = primes;
+    var newPrimes = isPrime(primes);
+    numPrime[i] = newPrimes;
+  }
+  //Starting with the for cycles that track the inputNumbers
+  for (int j = 0; j < size; j++) {
+    BigInt primes = inputNumbers[j];
+    if (numPrime[j] == true) {
+      stdout.writeln(primes.toString() + " is a prime number");
+    } else if (numPrime[j] == false) {
+      stdout.writeln(primes.toString() + " isn't a prime number");
+    }
   }
 }
 
