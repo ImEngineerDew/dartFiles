@@ -1,19 +1,20 @@
 Pseudocode to calculate each prime number:
 
 
-method isPrime(integer alpha, integer beta)
-{
-   if(alpha<=1 or alpha==3)
-   {
-   	return false;
-   }
-   if(alpha<=3)
-   {
-        return true;
-   }
-   
-   int delta = alpha-1;
-   while(delta%2==0)
-   {
-     delta= delta/2;
-   }
+function bool isPrime(int number){
+  
+  if(number == 0 or number == 1 number == 4)
+  {
+      return false;
+  }
+  for(int i=2; i<(number)/2; i++)
+  {
+    //If these divisible numbers aren't primes
+    if(number%i==0)
+    {
+       return false;
+    }
+  }
+  //If the number calculated is a prime number
+  return true;
+}
