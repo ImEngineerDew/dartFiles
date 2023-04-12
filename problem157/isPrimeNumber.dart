@@ -28,3 +28,7 @@ bool isPrime(int number) {
   //If the answer is true that indicates a prime number
   return true;
 }
+
+int backwardsPrime(int number) {
+  return 0;
+}
