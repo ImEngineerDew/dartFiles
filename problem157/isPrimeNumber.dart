@@ -21,7 +21,7 @@ bool isPrime(int number) {
   if (number == 0 || number == 1 || number == 4) {
     return false;
   }
-  for (int i = 2; i < (number) ~/ 2; i++) {
+  for (int i = 2; i < BigInt.from(number) ~/ 2; i++) {
     //that (number)~/2 is a Dart division
     if (number % i == 0) {
       return false;
