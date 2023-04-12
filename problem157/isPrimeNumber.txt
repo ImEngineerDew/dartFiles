@@ -1,0 +1,19 @@
+Pseudocode to calculate each prime number:
+
+
+method isPrime(integer alpha, integer beta)
+{
+   if(alpha<=1 or alpha==3)
+   {
+   	return false;
+   }
+   if(alpha<=3)
+   {
+        return true;
+   }
+   
+   int delta = alpha-1;
+   while(delta%2==0)
+   {
+     delta= delta/2;
+   }
