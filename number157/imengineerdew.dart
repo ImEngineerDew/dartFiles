@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 void main() {
   stdout.write("Please write the size of your array: ");
@@ -16,13 +17,8 @@ void readBigsVec(List<BigInt> vec, int index) {
 
 void showBigsVec(List<BigInt> vec, int index) {
   if (index < vec.length) {
-    BigInt result = oMirp(vec[index]);
+    //BigInt result = oMirp(vec[index]);
     stdout.writeln(result);
-    showBigsVec(vec, index + 1);
+    showBigsVec(vec, index + 1); //My second recursive Method in Dart
   }
-}
-
-BigInt oMirp(BigInt number) {
-  //BigInt answer = isPrime(number);
-  return BigInt.zero;
 }
