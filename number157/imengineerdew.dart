@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 
 void main() {
   stdout.write("Please write the size of your array: ");
@@ -24,6 +23,6 @@ void showBigsVec(List<BigInt> vec, int index) {
 }
 
 BigInt oMirp(BigInt number) {
-  BigInt answer = isPrime(number);
-  return answer;
+  //BigInt answer = isPrime(number);
+  return BigInt.zero;
 }
