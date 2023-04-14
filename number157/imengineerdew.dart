@@ -3,8 +3,8 @@ import 'dart:math';
 
 void main() {
   stdout.write("Please write the size of your array: ");
-  int number = int.parse(stdin.readLineSync()!);
-  List<BigInt> arrayBigs = List<BigInt>.filled(number, BigInt.zero);
+  int size = int.parse(stdin.readLineSync()!);
+  List<BigInt> arrayBigs = List<BigInt>.filled(size, BigInt.zero);
 }
 
 void readBigsVec(List<BigInt> vec, int index) {
@@ -17,7 +17,7 @@ void readBigsVec(List<BigInt> vec, int index) {
 
 void showBigsVec(List<BigInt> vec, int index) {
   if (index < vec.length) {
-    //BigInt result = oMirp(vec[index]);
+    BigInt result = vec[index];
     stdout.writeln(result);
     showBigsVec(vec, index + 1); //My second recursive Method in Dart
   }
