@@ -41,3 +41,5 @@ void whileOne(BigInt d, int s) {
     whileOne(d, s + 1);
   }
 }
+
+BigInt
